@@ -9,7 +9,7 @@ local click_target = function()
 end
 
 local click_new = function()
-	if IsShiftKeyDown() then
+	if IsShiftKeyDown() or IsControlKeyDown() or IsAltKeyDown() then
 		click_orig()
 	else
 		click_target()

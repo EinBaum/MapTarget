@@ -1,6 +1,6 @@
 ## Interface: 11200
 ## Title: MapTarget
-## Notes: Click red dots on the minimap to target them. Use Shift-Click to create pings.
+## Notes: Click red dots on the minimap to target them. Alt/Shift/Ctrl-click to create pings.
 ## Author: EinBaum https://github.com/EinBaum
 ## Version: 1.0
 
