@@ -9,5 +9,5 @@
 
 ## Installation
 
-- Download as ZIP
-- Rename the directory to "MapTarget"
+- [Click here to download](https://github.com/EinBaum/MapTarget/releases)
+- Make sure the directory name is "MapTarget"
