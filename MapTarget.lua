@@ -21,10 +21,4 @@ local setup = function()
 	Minimap_OnClick = click_new
 end
 
-local f = CreateFrame("frame")
-f:RegisterEvent("PLAYER_ENTERING_WORLD")
-f:SetScript("OnEvent", function()
-	if event == "PLAYER_ENTERING_WORLD" then
-		setup()
-	end
-end)
+setup()
