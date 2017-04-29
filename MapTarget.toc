@@ -1,7 +1,7 @@
 ## Interface: 11200
-## Title: MapTarget
-## Notes: Click red dots on the minimap to target them. Alt/Shift/Ctrl-click to create pings.
+## Title: Map|cff60ff00Target|r
+## Notes: Minimap tracking improvements for hunters.
 ## Author: EinBaum https://github.com/EinBaum
-## Version: 1.0
+## Version: 2.0
 
 MapTarget.lua

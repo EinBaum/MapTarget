@@ -8,7 +8,7 @@ AddOn for hunters. Changes what mouse clicks on your minimap do:
 
 ## Why?
 
-- Tracking: This AddOn makes all "red dots" on the minimap clickable. It's a great way of targetting players who are hiding behind objects or inside buildings
+- Tracking: This AddOn makes all "red dots" on the minimap clickable. It's a great way of targeting players who are hiding behind objects or inside buildings
 - Eagle Eye: Did you know that you can cast Eagle Eye and target a place on the minimap? Using the shift-click feature you can cast Eagle Eye on very very far away places
 
 ## Notes
