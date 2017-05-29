@@ -14,12 +14,49 @@ local function unescape(str)
     return str
 end
 
-local click_target = function()
-	local name = getglobal("GameTooltipTextLeft1"):GetText()
-	if name then
-		name = unescape(name)
-		TargetByName(name)
+local function getlines(text)
+	text = text .. "\n"
+	local lines = {}
+	local index = 1
+	local pos = 0
+	while true do
+		local newpos = strfind(text, "\n", pos, true)
+		if not newpos then
+			break
+		end
+		local line = strsub(text, pos, newpos - 1)
+		if line ~= "" then
+			lines[index] = line
+			index = index + 1
+		end
+		pos = newpos + 1
 	end
+	return lines
+end
+
+local function filter(name)
+	if strfind(name, " ") then
+		return false
+	end
+	return true
+end
+
+local click_target = function()
+	local text = getglobal("GameTooltipTextLeft1"):GetText()
+	if not text then return end
+	local names = getlines(text)
+
+	local selected = 1
+
+	for i, name in names do
+		local uname = unescape(name)
+		names[i] = uname
+		if filter(uname) then
+			selected = i
+		end
+	end
+
+	TargetByName(names[selected], true)
 end
 
 local click_new = function()
